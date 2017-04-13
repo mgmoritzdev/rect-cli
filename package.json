@@ -1,0 +1,18 @@
+{
+  "name": "rect-cli",
+  "version": "1.0.0",
+  "description": "Rectangle utilities command line interface example",
+  "main": "rect.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marcos Moritz",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mgmoritzdev/rect-cli.git"
+  }
+}
