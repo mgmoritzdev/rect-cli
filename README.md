@@ -3,6 +3,7 @@
 This is an example of yargs library to create a simple command line tool to calculate the perimeter and the area of a rectangle.
 
 Find more about yargs on [github](https://github.com/yargs/yargs).
+Original Example from [Coursera](https://www.coursera.org) [Server-side Development with NodeJS](https://www.coursera.org/learn/server-side-development)
 
 
 ## Usage
@@ -16,12 +17,12 @@ The simple and tiny code creates a command line parser with the validations and 
 
 ```javascript
 (function() {
-  var argv = require('yargs')
-    .usage('Usage: node $0, -w=[num] -h=[num]')
-    .demand(['w', 'h'])
-    .argv;
+	var argv = require('yargs')
+	    .usage('Usage: node $0, -w=[num] -h=[num]')
+	    .demand(['w', 'h'])
+	    .argv;
 
-  var rectcb = require ('./rectcb');
+	var rectcb = require ('./rectcb');
 
 	rectcb(argv.w, argv.h, function(error, rectangle) {
 		if (error) {
@@ -30,6 +31,6 @@ The simple and tiny code creates a command line parser with the validations and 
 			console.log('perimeter = ' + rectangle.perimeter);
 			console.log('area = ' + rectangle.area);
 		}
-  });
+	});
 })();
 ```
